@@ -1,0 +1,236 @@
+@media (max-width: 574px) {
+    .row1{
+        float: left;
+        width: 100%;
+        margin-bottom: 0px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        background-color: rgb(232, 232, 232);
+        font-family: sans-serif;
+    }
+    .boxcenter{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .boxcenter ul{
+        list-style: none;
+        text-align: left;
+        padding-left: 0px;
+    }
+    .boxfooter2 a{
+      text-decoration: none; 
+      color: black;
+    }
+    .boxfooter2 a:hover{
+      color: tomato;
+    }
+    .boxfooter1{
+        width: 100%;
+        padding-left: 20px;
+        padding-bottom:20px ;
+        float:left;
+        list-style: none;
+    }
+    .boxfooter2{
+        width: 100%;
+        float: left;
+        padding-left: 20px;
+    }
+    ul.boxfooter{
+        width: 100%;
+        padding-left: 0px;
+    }
+    .boxfooter3{
+        width: 100%;
+        float: left;
+        padding-left: 20px;
+    }
+    .boxfooter3 a{
+      text-decoration: none; 
+      color: black;
+    }
+    .boxfooter3 a:hover{
+      color: tomato;
+    }
+    .boxfooter4{
+        width: 100%;
+        float: left;
+        padding-left: 20px;
+    }
+    .textcenter{
+        text-align: center;
+        background-color: rgb(255, 255, 255);
+        padding-bottom: 0px;
+    }
+    .socials-list a{
+        padding-right: 5px ;
+    }
+
+
+    .image{
+        margin-top: 0px;
+        padding-bottom: 20px;
+        position: relative;
+        z-index: -1;
+    }
+    
+    .image img{
+        width: 100%;
+        height: 200px;
+    
+    }
+
+    .gioithieu{
+        width: 100%;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 0px 0px;
+        font-size: 18px;
+    }
+    .gioithieu p{
+        text-align: justify;
+    }
+    .gioithieu h1{
+        color: tomato;
+    }
+    .gioithieu a{
+        text-decoration: none; 
+        color: tomato;
+    }
+    
+    .gioithieu img{
+        width: 100%;
+        height: 150px;
+    }
+    .gioithieu2{
+        text-align: justify;
+        width: 100%;
+        font-size: 18px;
+        padding: 30px  20px 10px 20px;
+    }
+    .gioithieu2 h6{
+        font-style: italic;
+    }
+
+
+    
+}
+
+
+@media (min-width: 574px) and (max-width: 990px) {
+    .row1{
+        float: left;
+        width: 100%;
+        padding-left: 20px;
+        margin-bottom: 0px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        background-color: rgb(232, 232, 232);
+        font-family: sans-serif;
+    }
+    .boxcenter{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .boxcenter ul{
+        list-style: none;
+        text-align: left;
+        padding-left: 0px;
+    }
+    .boxfooter2 a{
+      text-decoration: none; 
+      color: black;
+    }
+    .boxfooter2 a:hover{
+      color: tomato;
+    }
+    .boxfooter1{
+        width: 25%;
+        padding-left: 20px;
+        padding-bottom:20px ;
+        float:left;
+        list-style: none;
+    }
+    .boxfooter2{
+        width: 25%;
+        float: left;
+        padding-bottom: 94px;
+        padding-left: 20px;
+    }
+    ul.boxfooter{
+        width: 100%;
+        padding-left: 0px;
+    }
+    .boxfooter3{
+        width: 25%;
+        float: left;
+        padding-left: 20px;
+    }
+    .boxfooter3 a{
+      text-decoration: none; 
+      color: black;
+    }
+    .boxfooter3 a:hover{
+      color: tomato;
+    }
+    .boxfooter4{
+        width: 25%;
+        float: left;
+        padding-left: 20px;
+    }
+    .textcenter{
+        text-align: center;
+        background-color: rgb(255, 255, 255);
+        padding-bottom: 0px;
+    }
+    .socials-list a{
+        padding-right: 5px ;
+    }
+
+
+    .image{
+        margin-top: 0px;
+        padding-bottom: 30px;
+    }
+    
+    .image img{
+        width: 100%;
+        height: 250px;
+    }
+
+
+    .gioithieu{
+        width: 100%;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 0px 0px;
+        font-size: 18px;
+    }
+    .gioithieu p{
+        text-align: justify;
+    }
+    .gioithieu h1{
+        color: tomato;
+    }
+    .gioithieu a{
+        text-decoration: none; 
+        color: tomato;
+    }
+    
+    .gioithieu img{
+        width: 100%;
+        height: 200px;
+    }
+    .gioithieu2{
+        text-align: justify;
+        width: 100%;
+        font-size: 18px;
+        padding: 30px  20px 10px 20px;
+    }
+    .gioithieu2 h6{
+        font-style: italic;
+    }
+      
+
+    
+}

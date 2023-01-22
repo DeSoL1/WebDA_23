@@ -1,0 +1,62 @@
+.gioithieu{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0px 50px;
+    font-size: 18px;
+}
+.gioithieu p{
+    text-align: justify;
+    padding: 30px 20px;
+}
+.gioithieu h1{
+    color: tomato;
+}
+.gioithieu a{
+    text-decoration: none; 
+    color: tomato;
+}
+
+.gioithieu img{
+    width: 1200px;
+    height: 300px;
+}
+.gioithieu2{
+    font-size: 18px;
+    padding: 30px  110px 50px 110px;
+    
+}
+.gioithieu2 h6{
+    font-style: italic;
+}
+#logo{
+    width: 75px;
+    height: auto;
+    display: none;
+}
+#logo-ip{
+    width: 100px;
+    height:100px;
+   text-align: left;
+}
+.video{
+    width: 600px;
+    height: auto; 
+    padding: 10px;
+    margin: 20px 100px;
+}
+
+@media (max-width:574px) {
+    .video{
+        width: 90%;
+        height: auto;
+        margin: 10px;
+    }
+}
+@media (min-width:574px) and (max-width:990px){
+    .video{
+        width: 200px;
+        height: auto;
+        padding: 0px;
+    margin: 25px 50px
+    }
+}

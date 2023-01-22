@@ -1,0 +1,570 @@
+* {
+    box-sizing: border-box;
+ }
+ 
+.navbar {
+    position: relative;
+    text-align: center;
+    background: rgb(255, 253, 253);
+    height: 100px;
+	width: 100%;
+}
+ 
+.navbar-left {
+    display: inline-block;
+    margin-left: 15px;
+    justify-content: center;
+}
+.logo{
+    cursor: pointer;
+    width: 100px;
+    height: auto;
+    margin-left: 100px;
+}
+
+/* Menu da cap*/
+#main-menu{
+   display: flex;
+   list-style: none;
+   margin: 0;
+   padding: 0;
+}
+#main-menu li a{
+   display: block;
+   text-decoration: none;
+}
+#main-menu ul.menu-c2{
+   width: 200px;
+   position: absolute;
+   background-color: rgb(225, 225, 225);
+   list-style: none;
+   padding: 10px 0px;
+   display: none;
+   text-align: left;
+}
+#main-menu ul.menu-c2 a i{
+   font-size:18px;
+    float: right;
+    padding-right: 10px;
+
+}
+#main-menu li:hover ul.menu-c2 {
+   display: block;
+}
+#main-menu ul.menu-c2 a{
+   width: 200px;
+   color: black;
+   border-bottom: 1px solid rgb(255, 255, 255);
+   padding: 5px 0px;
+   padding-left: 20px;
+}
+#main-menu ul.menu-c2  li:hover>a{
+   color: #ec4821;
+}
+#main-menu ul.menu-c2 li:last-child a{
+   border: none;
+}
+#main-menu ul.menu-c2 ul.menu-c2{
+   left: 200px;
+   margin-top: -35px;
+   display: none;
+}
+#main-menu ul.menu-c2 li:hover ul.menu-c2 {
+   padding: 0px 0px;
+   display: block;
+}
+/*thiet lap boder*/
+/* tìm kiếm */
+.search-add {
+   margin: 7px 0px 0px 0px;
+   padding-right: 30px;
+ }
+ 
+ .search-add .form-group {
+   position: relative;
+ }
+ 
+ .search-add input {
+   border: 2px solid tomato;
+   padding: 7px 40px 7px 15px;
+   border-radius: 10px;
+   -webkit-transition: all 0.3s linear;
+   -moz-transition: all 0.3s linear;
+   -o-transition: all 0.3s linear;
+   transition: all 0.3s linear;
+ }
+ 
+ .search-add input:focus {
+   box-shadow: none;
+   outline: none;
+   border-color: #0dcdbd;
+ }
+ 
+ .search-add .search-btn {
+   position: absolute;
+   top: 8px;
+   right: 10px;
+   color: #272727;
+   border: none;
+  
+   cursor: pointer;
+   background: transparent;
+   font-size: 18px;
+ }
+ .search-add .form-group a i {
+   position: absolute;
+   top: 12px; 
+   right: 10px;
+   transition: all 0.5s ease-in-out;
+   width: 20px;
+   height: auto;
+   cursor: pointer;
+ }
+.navbar-right {
+    display: inline-block;
+    margin-right: 15px;
+    position: absolute;
+    top: 0;
+    right: 0;
+
+}
+
+ .navbar-brand,
+ .navbar .nav-link {
+    color: black;
+    text-decoration: none;
+    display: inline-block;
+    padding: 15px;
+    font-size: large;
+    text-align: center;
+}
+ 
+.navbar-brand {
+    font-weight: bold;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+ 
+.navbar .nav-link:hover {
+    color: #ec4821;
+}
+
+.navbar-collapse,
+.navbar-toggler {
+    display: none;
+}
+ 
+ @media (max-width: 842px) {
+    .navbar-right,
+    .navbar-left {
+       display: block;
+       border-top: 1px solid DimGray;
+    }
+ 
+    .navbar-right {
+       position: static;
+    }
+ 
+    .navbar .nav-link {
+       display: block;
+    }
+ 
+    .navbar-collapse:checked + .navbar {
+       max-height: 50px;
+       overflow: hidden;
+    }
+ 
+    .navbar-toggler {
+       color: black;
+ 
+       display: inline-block;
+       padding: 15px 25px;
+ 
+       position: absolute;
+       top: 0;
+       right: 0;
+ 
+       border-left: 1px solid DimGray;
+ 
+       cursor: pointer;
+    }
+ } /* @media */
+ 
+ .down1 {
+    position: relative;
+    width: 250px;
+    display: inline-block;
+    margin-right: 200px;  
+ }
+
+ .search {
+    position: relative;
+    width: 100%;
+    padding: 10px 10px 10px 20px; /*left top bot right*/
+    border: 0;
+    border-radius: 50px;
+    overflow: hidden;
+    font-family: "Poppins";
+    font-size: 16px;
+    transition: all 0.5s ease-in-out;
+}
+
+.search:focus-visible {
+    outline: 0;
+    box-shadow: 0 0 5px 5px rgb(116, 116, 116);
+}
+
+#textcontent-top{
+    background-image: url(../images/bannerSP.jpg);
+    height: 50px;
+    color: aliceblue;
+    margin-bottom: 10px;
+    margin-left: 100px;
+    margin-right: 100px;
+    text-align:center;
+    font-weight: 500;
+}
+#textcontent-top p{
+    padding-top: 5px;
+    font-size: 24px;
+}
+/*-------------------------------------
+		Lọc Sản Phẩm
+--------------------------------------*/
+.content {
+   display: flex;
+   float: left;
+   margin: 0 40px;
+}
+.bannerSP {
+   margin: 0px 0px 10px;
+   background-color: #eeeeee;
+   color: #000;
+   height: 40px;
+   display: flex;
+   align-items: center;
+   padding-left: 50px;
+}
+.imgbannerSP img {
+   margin: 0px 0px 30px 40px;
+   background-size: cover;
+   background-position: 50% 50%;
+   height: 54px;
+   width: 1230px;
+   z-index: 0;
+}
+.bannerSP a {
+   text-decoration: none;
+   color: black;
+}
+.bannerSP a:hover {
+   color: #ec4821;
+   text-decoration: none;
+}
+.ChonSanPham {
+   margin: 13px 35px 40px 25px;
+   width: 290px;
+   color: #000;
+   font-family: Arial, Helvetica, sans-serif;
+}
+.ChonSanPham .Danhmucsp  {
+   border: 1px solid #ebe3e3;
+   margin: 10px;
+}
+.ChonSanPham .Danhmucsp ul .loaisp {
+   text-align: left;
+}
+.ChonSanPham .Danhmucsp ul li a {
+   text-decoration: none;
+   color: #000;
+   margin-left: -28px;
+   line-height: 1.75;
+}
+.ChonSanPham .Danhmucsp ul li a:hover {
+   color: #ce4821;
+}
+.ChonSanPham .Danhmucsp h5 {
+   text-align: left;
+   color: black;
+   border-bottom: 1px solid #ebe9e9;
+   width: 273px;
+   height: 50px;
+   padding: 5px;
+   display: flex;
+   align-items: center;
+}
+.ChonSanPham .locsanpham {
+   margin: 10px;
+   position: relative;
+   border-left: 0.5px solid #ebe3e3;
+   border-right: 1px solid #ebe3e3;
+   border-bottom: 1px solid #ebe3e3;
+   max-height: 1500px;
+}
+
+.ChonSanPham .locsanpham li {
+   list-style: none;
+}
+.ChonSanPham .locsanpham ul {
+   border-bottom: 1px solid #ebe3e3;
+}
+.ChonSanPham .locsanpham h5 {
+   text-align: left;
+   color: black;
+   border-bottom: 1px solid #ebe9e9;
+   border-top: 1px solid #ebe3e3;
+   width: 272px;
+   padding: 5px;
+}
+.ChonSanPham .locsanpham .sub-btn {
+   text-decoration: none;
+   font-size: 17px;
+   color: #000;
+   display: block;
+   border: none;
+   background: none;
+   text-align: left;
+   cursor: pointer;
+   outline: none;
+}
+.ChonSanPham .locsanpham .sub-btn:hover {
+   color: #ec4821;
+}
+.ChonSanPham .locsanpham li i {
+   color: #000;
+   position: fixed;
+   left: 100px;
+   margin-left: 135px;
+}
+.ChonSanPham .locsanpham li i:hover {
+   color: #ec4821;
+}
+.ChonSanPham .locsanpham .dropdown {
+   position: absolute;
+   margin-top: -8px;
+   transition: 0.3s ease;
+}
+.xoacham{
+    list-style: none;
+}
+.sub-menu {
+   display: none;
+}
+.sub-menu li a {
+   color: black;
+   padding: 12px 16px;
+   text-decoration: none;
+   display: block;
+}
+.sub-menu li a:hover {
+   color: #ec4821;
+   background-color: #fff;
+}
+.rotate{
+   transform: rotate(90deg);
+}
+.sub-menu .sub-item {
+   color: #3b3a3a;
+   cursor: pointer;
+}
+input[type='radio']:after {
+   width: 15px;
+   height: 15px;
+   border-radius: 15px;
+   top: -3px;
+   left: -1px;
+   position: relative;
+   background-color: #ffffff;
+   content: '';
+   display: inline-block;
+   visibility: visible;
+   border: 2px solid rgb(180, 175, 175);
+   -webkit-border-radius: 15px;
+   -moz-border-radius: 15px;
+   -ms-border-radius: 15px;
+   -o-border-radius: 15px;
+}
+
+input[type='radio']:checked:after {
+   width: 15px;
+   height: 15px;
+   border-radius: 15px;
+   top: -3px;
+   left: -1.3px;
+   position: relative;
+   background-color: #ec4821;
+   content: '';
+   display: inline-block;
+   visibility: visible;
+   padding: 2px;
+   border: 2px solid #ec4821;
+   background-clip: content-box;
+   -webkit-border-radius: 15px;
+   -moz-border-radius: 15px;
+   -ms-border-radius: 15px;
+   -o-border-radius: 15px;
+}
+/*-------------------------------------
+		 Sản Phẩm
+--------------------------------------*/
+.main-sp {
+   margin-left: -30px;
+   display: grid;
+   grid-column-end: span 3;
+}
+.main-sp h5 {
+   margin-top: 15px;
+}
+.main-sp .xep-ul {
+   margin-left: -35px;
+   list-style: none;
+
+}
+.main-sp .xep-li {
+   float: left;
+   padding: 3px 25px 3px 25px;
+   border-bottom: 0.5px solid #d6d6df;
+
+}
+ul.sanpham{
+   list-style: none;
+   display: grid;
+   grid-template-columns: repeat(auto-fit,minmax(250px, 2fr));
+   
+   
+}
+ul.sanpham li{
+   margin: 10px;
+   border: 1px solid #c8c8ca;
+}
+ul.sanpham li:hover {
+   box-shadow: 0 4px 5px rgba(121, 121, 121, 0.5);
+  
+}
+ul.sanpham li img{
+   max-width: 100%;
+   height: auto;
+   object-fit: cover;
+}
+
+
+#backtop{
+   width: 50px;
+   height: 50px;
+   background-color:#00a396;
+   color: white;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-radius: 50%;
+   position:fixed; /* cố định nút trên màn hình*/
+   bottom: 40px;
+   right: 20px;
+   cursor: pointer;
+}
+#backtop:hover{
+ background-color:tomato;
+ transition: all 0.2s;
+}
+
+
+.side_view {
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+}
+.side_view img {
+   width: 25%;
+   height: 25%;
+   object-fit: cover;
+   cursor: pointer;
+   margin: 3px;
+   padding: 2px;
+}
+.side_view img:hover {
+   border: 1px solid #ec4821;
+}
+
+ul.sanpham li .sanpham-info{
+   padding: 10px 0px;
+}
+ul.sanpham li .sanpham-info a{
+   display: block;
+   text-decoration: none;
+}
+ul.sanpham li .sanpham-info a.sanpham-cat{
+
+   font-size: 11px;
+   text-transform: uppercase;
+   color: #858586;
+   padding: 5px 0px;
+}
+ul.sanpham li .sanpham-info a.sanpham-name{
+   font-weight: 700;
+   text-align: center;
+    color: rgb(0, 0, 0);
+    padding: 5px 0px;
+    height: 80px;
+}
+ul.sanpham li .sanpham-info .sanpham-gia{
+   color: tomato;
+   font-weight: 600;
+   padding-top: 10px;
+   text-align: center;
+
+}
+@media (max-width: 574px){
+   .ChonSanPham{
+      display: none;
+   }
+   .main-sp {
+      margin-left: -30px;
+      display: grid;
+      grid-column-end: span 3;
+   }
+   .main-sp h5 {
+      margin-top: 15px;
+   }
+   .main-sp .xep-ul {
+      margin-left: 0px;
+      list-style: none;
+      position: relative;
+      z-index: -1;
+   
+   }
+   .main-sp .xep-li {
+      float: left;
+      padding: 3px 25px 3px 25px;
+      border-bottom: 0.5px solid #d6d6df;
+   
+   }
+   #textcontent-top{
+      background-image: url(../images/bannerSP.jpg);
+      height: 50px;
+      color: aliceblue;
+      margin-bottom: 10px;
+      margin-left: 0px;
+      margin-right:0px;
+      text-align:center;
+      font-weight: 500;
+      position: relative;
+      z-index: -1;
+  }
+  #textcontent-top p{
+      padding-top: 5px;
+      font-size: 24px;
+  }
+  .search-add {
+   margin: 0px 0px 0px 0px;
+   padding-right: 0px;
+}
+}
+@media (min-width: 574px) and (max-width: 990px){
+   #textcontent-top{
+      margin-top: 100px;
+      font-size: 24px;
+  }
+  .logo{
+   margin-left: 20px;
+  }
+}

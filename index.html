@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <title>HomeDecor_Trangchu</title>
+    <link rel="icon" href="https://congsv.vinhuni.edu.vn/sv/assets/images/eUniversity/logo_dhvinh.png"/>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style_trangchu_content.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/phone_trangchu.css">
+    <link rel="stylesheet" href="css/phone_menu.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/fontawesome.min.css" integrity="sha384-z4tVnCr80ZcL0iufVdGQSUzNvJsKjEtqYZjiQrrYKlpGow+btDHDfQWkFjoaz/Zr" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/c07a195907.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <script>
+        $(document).ready(function() {
+            $('#toggle').click(function() {
+                $('nav').slideToggle();
+            });
+        })
+    </script>
+
+    <div id="wrapper">
+        <div id="header">
+            <div id="toggle">
+                <a href="index.html"><img class="logo1" src="images/Logo_chinhthuc01.png" alt=""></a>
+                <i class="fas fa-bars"></i>
+            </div>
+            <nav>
+                <a href="index.html"><img class="logo" src="images/Logo_chinhthuc01.png" alt=""></a>
+                <ul id="main-menu">
+                    <li><a href="index.html"style="color: tomato;" ><i class="fa-sharp fa-solid fa-house"></i></a></li>
+                    <li><a  href="gioithieu.html">Giới Thiệu</a></li>
+                    <li><a  href="sanpham.html" >Sản Phẩm</a>
+                    <li><a href="dealhot.html">Deal Hot</a></li>
+                    <li><a href="lienhe.html" >Liên hệ</a></li>
+                    <li><a href="order.html">Giỏ Hàng Của Bạn</a></li>
+                    <li class="search-add" >
+                        <form method="post">
+                          <div class="form-group">
+                              <input type="search" name="field-name" value="" placeholder="Tìm kiếm..." required="">
+                              <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+                              <button type="submit" class="search-btn"><span class="lni-search"></span></button>
+                          </div>
+                        </form>
+                      </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div>
+        <div class="image">
+          <img id="img" onclick="changeImage()" src="anh7.jpg" alt="">    
+        </div>
+    </div>
+     
+      <script>
+          var index = 1;
+          function changeImage(){ 
+              var imgs = ["anh4.jpg","anh5.jpg","anh6.jpg","anh7.jpg"];
+              document.getElementById('img').src = imgs[index];
+              index++;
+              if(index==4){
+                  index = 0;
+              }
+          }
+          setInterval(changeImage,2000);
+      </script>
+        
+  
+  <!--Phần content-->
+  <article>
+    <div class="textcontent">
+    <h4>DANH MỤC SẢN PHẨM</h4>
+    <p>Home Decor là giải pháp thương mại điện tử hiện đại và chuyên biệt trong lĩnh vực bán lẻ nội thất, đồ trang trí và điện gia dụng trong gia đình, định vị trở thành một giải pháp tiên phong trong định hình phong cách sống hiện đại cho các gia chủ tại Việt Nam và khu vực Đông Nam Á qua sự kết hợp của những thương hiệu nội thất hàng đầu với đa dạng phong cách và trải nghiệm mua sắm xuyên suốt, trực quan thông qua việc tích hợp các ứng dụng 3D visualization, Home Styler, AR và các giải pháp tài chính.</p>
+  </div>
+  </div> 
+   <div class="container mt-5">
+          <div class="row">
+            <div class="col-sm-3">
+              <a href="sanpham.html"><img class="img" src="https://bizweb.dktcdn.net/thumb/large/100/396/362/collections/5-sofa-1587982024-1.jpg?v=1596443528717" alt=""></a>
+                <p><a href="sanpham.html">Phòng Khách</a></p>
+            </div>
+            <div class="col-sm-3">
+              <a href="sanpham.html"><img class="img" src="https://bizweb.dktcdn.net/thumb/large/100/396/362/collections/8-den-1587982122-1.jpg?v=1596443333337" alt=""></a>
+              <p><a href="sanpham.html">Đèn</a></p>
+            </div>
+            <div class="col-sm-3">
+              <a href="sanpham.html"><img class="img" src="https://bizweb.dktcdn.net/thumb/large/100/396/362/collections/6-giuong-1587982051-1.jpg?v=1596443309027" alt=""></a>
+              <p><a href="sanpham.html">Chăn, Ga, Gối & Nệm</a></p>
+            </div>
+            <div class="col-sm-3">
+              <a href="sanpham.html"><img class="img" src="https://bizweb.dktcdn.net/thumb/large/100/396/362/collections/9-lo-trang-tri-1587982150-1.jpg?v=1596443201900" alt=""></a>
+              <p><a href="#">Lọ & Bình trang trí</a></p>
+            </div>
+            <div class="col-sm-3">
+              <a href="sanpham.html"><img class="img" src="https://bizweb.dktcdn.net/thumb/large/100/396/362/collections/10-guong-1587982173-1.jpg?v=1596443745467" alt=""></a>
+              <p><a href="#">Đồ dùng nhà tắm</a></p>
+            </div>
+            <div class="col-sm-3">
+              <a href="sanpham.html"><img class="img" src="https://bizweb.dktcdn.net/thumb/large/100/396/362/collections/1-ban-1587981900-1.jpg?v=1596443806553" alt=""></a>
+              <p><a href="#">Bàn trang trí</a></p>
+            </div>
+            <div class="col-sm-3">
+              <a href="sanpham.html"><img class="img" src="https://bizweb.dktcdn.net/thumb/large/100/396/362/collections/4-tu-1587981995-1.jpg?v=1596443569283" alt=""></a>
+              <p><a href="#">Tủ chứa đồ</a></p>
+            </div>
+            <div class="col-sm-3">  
+              <a href="sanpham.html"><img class="img" src="https://bizweb.dktcdn.net/thumb/large/100/396/362/collections/3-ke-1587981966-1.jpg?v=1596443380943" alt=""></a>
+              <p><a href="#">Kệ và Giá đỡ</a></p>
+            </div>
+          </div>
+    
+        <br>
+        <hr color="black" width="90%"  size="5px" text-align="center" style="margin: auto;" />
+        <br>
+
+        <!--sản phẩm -->
+        <div id="wrapper">
+          <div class="textcontent">
+            <h4>TOP SẢN PHẨM BÁN CHẠY</h4>
+          </div>
+          <ul class="sanpham">
+            <li>
+              <div class="sanpham-item">
+                <div class="sanpham-top">
+                  <a href="" class="sanpham-thumb"><img src="images/sp1.jpg" alt=""></a>
+                  <a href="" class="mua-ngay">Mua ngay</a>
+                </div>
+                <div class="sanpham-info">
+                  <a href="" class="sanpham-cat">Bàn sofa </a>
+                  <a href="" class="sanpham-name"> Bộ 2 Bàn Sofa IGEA Việt Nam Phong Cách Scanvadian Màu Trắng</a>
+                  <div class="sanpham-gia">599.000₫ <p>850.000₫ <i style="padding-left:30px ;" class="fa-regular fa-heart"></i></p></div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="sanpham-item">
+                <div class="sanpham-top">
+                  <a href="" class="sanpham-thumb"><img src="images/sp2.jpg" alt=""></a>
+                  <a href="" class="mua-ngay">Mua ngay</a>
+                </div>
+                <div class="sanpham-info">
+                  <a href="" class="sanpham-cat">Bàn làm việc </a>
+                  <a href="" class="sanpham-name"> Bộ Bàn Ghế làm Việc Make My Home Simple 1</a>
+                  <div class="sanpham-gia">2.499.000₫<p><i class="fa-regular fa-heart"></i></p></div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="sanpham-item">
+                <div class="sanpham-top">
+                  <a href="" class="sanpham-thumb"><img src="images/sp3.jpg" alt=""></a>
+                  <a href="" class="mua-ngay">Mua ngay</a>
+                </div>
+                <div class="sanpham-info">
+                  <a href="" class="sanpham-cat">Bàn ăn  </a>
+                  <a href="" class="sanpham-name"> Bộ bàn ăn VINA- màu nâu</a>
+                  <div class="sanpham-gia">3.050.000₫<p>4.900.000₫ <i style="padding-left:10px ;" class="fa-regular fa-heart"></i></p></div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="sanpham-item">
+                <div class="sanpham-top">
+                  <a href="" class="sanpham-thumb"><img src="images/sp4.jpg" alt=""></a>
+                  <a href="" class="mua-ngay">Mua ngay</a>
+                </div>
+                <div class="sanpham-info">
+                  <a href="" class="sanpham-cat">Bàn ăn </a>
+                  <a href="" class="sanpham-name"> Bộ 2 Bàn ăn Phong Cách Scanvadian Màu Trắng</a>
+                  <div class="sanpham-gia">600.000₫ <p><i class="fa-regular fa-heart"></i></p></div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="button">
+          <a href="sanpham.html"><button class="btn1">Xem tất cả</button></a>
+        </div>
+        <br>
+        <hr color="black" width="90%"  size="5px" text-align="center" style="margin: auto;" />
+        <br>
+        <div class="img1" >
+          <a href=""><img src="https://bizweb.dktcdn.net/100/396/362/themes/777022/assets/slider_1.jpg?1664182486212" alt="" ></a>
+          
+        </div>
+        <br>
+        <hr color="black" width="90%"  size="5px" text-align="center" style="margin: auto;" />
+        <br>
+
+
+        <div id="wrapper">
+          <div class="textcontent">
+            <h4>SẢN PHẨM NHÀ XANH</h4>
+          </div>
+          <ul class="sanpham">
+            <li>
+              <div class="sanpham-item">
+                <div class="sanpham-top">
+                  <a href="" class="sanpham-thumb"><img src="images_sp/anh10.jpg" alt=""></a>
+                  <a href="" class="mua-ngay">Mua ngay</a>
+                </div>
+                <div class="sanpham-info">
+                  <a href="" class="sanpham-cat">Bàn trang điểm </a>
+                  <a href="" class="sanpham-name"> Bàn Trang Điểm cao cấp OHAHA_002</a>
+                  <div class="sanpham-gia">2.000.000₫<p>2.499.000₫ <i style="padding-left:10px ;" class="fa-regular fa-heart"></i></p></div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="sanpham-item">
+                <div class="sanpham-top">
+                  <a href="" class="sanpham-thumb"><img src="images_sp/anh11.jpg" alt=""></a>
+                  <a href="" class="mua-ngay">Mua ngay</a>
+                </div>
+                <div class="sanpham-info">
+                  <a href="" class="sanpham-cat">Kệ</a>
+                  <a href="" class="sanpham-name"> Kệ Trang Trí Furnist Leto 4 Tầng - Ván Màu Bất Kỳ</a>
+                  <div class="sanpham-gia">1.160.000₫<p>1.499.000₫ <i style="padding-left:20px ;" class="fa-regular fa-heart"></i></p></div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="sanpham-item">
+                <div class="sanpham-top">
+                  <a href="" class="sanpham-thumb"><img src="images_sp/anh12.jpg" alt=""></a>
+                  <a href="" class="mua-ngay">Mua ngay</a>
+                </div>
+                <div class="sanpham-info">
+                  <a href="" class="sanpham-cat">Trang trí </a>
+                  <a href="" class="sanpham-name"> Trang Trí Tường Tick & Pick Set Everboards Bảng Gỗ Nam Châm Đa Năng</a>
+                  <div class="sanpham-gia">699.000₫ <p>499.000₫ <i style="padding-left:20px ;" class="fa-regular fa-heart"></i></p></div>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="sanpham-item">
+                <div class="sanpham-top">
+                  <a href="" class="sanpham-thumb"><img src="images_sp/anh13.jpg" alt=""></a>
+                  <a href="" class="mua-ngay">Mua ngay</a>
+                </div>
+                <div class="sanpham-info">
+                  <a href="" class="sanpham-cat">Trang trí </a>
+                  <a href="" class="sanpham-name"> Thang Trang Trí BEYOURs C Đen</a>
+                  <div class="sanpham-gia"> 499.000₫  <p><i class="fa-regular fa-heart"></i></p></div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+
+        <div class="button">
+         <a href="sanpham.html"> <button class="btn1">Xem tất cả</button></a>
+       </div>
+        <br>
+      </article>
+
+
+        <div id="backtop">
+          <i class="fa-solid fa-chevron-up"></i>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+        <script>
+          $(document).ready(function(){
+              $(window).scroll(function(){
+                if ($(this).scrollTop()){
+                 $('#backtop').fadeIn();
+                }else {
+                    $('#backtop').fadeOut();
+                  }
+              });
+                   $('#backtop').click(function(){
+                  $('html, body').animate({
+                     scrollTop: 0
+                  },  300);
+              });
+            });
+          </script>
+          
+      <!--Phần footer-->
+   <footer>
+    <div class="row1">
+      <div class="boxcenter">
+      <div class="boxfooter1">
+        <h5>Liện hệ với chúng tôi</h5>
+        <ul class="ul boxcenter">
+          <li><strong>Địa chỉ: </strong> Bạch Liệu, Trường Thi, TP.Vinh</li>
+          <li><strong>Điện thoại:</strong>  <a href="#" style="text-decoration: none;">1900 3473</a></li>
+          <li><strong>Email:</strong>  dercorhome@gmail.com</li>
+          <li><a href="#"><img class="logo" src="images/Logo_chinhthuc01.png" alt=""></a></li>
+        </ul>
+      </div>
+      <div class="boxfooter2">
+        <h5>Về chúng tôi</h5>
+        <ul class="ul boxfooter">
+          <li><a href="gioithieu.html">Giới thiệu</a></li>
+          <li><a href=""> Bảo mật thông tin cá nhân</a></li>
+          <li><a href="">Bán hàng cùng DecorHome</a></li>
+        </ul>
+      </div>
+      <div class="boxfooter3">
+        <h5>Hỗ trợ khách hàng</h5>
+        <ul class="ul boxfooter">
+          <li><a href="">Hướng dẫn đặt hàng</a> </li>
+          <li><a href="">Quy trình giao hàng & thanh toán</a> </li>
+          <li><a href="">Chính sách giải quyết khiếu nại</a> </li>
+        </ul>
+      </div>
+      <div class="boxfooter4">
+        <h5>Kết nối với chúng tôi</h5>
+        <div class="socials-list">
+          <a href=""><i class="fa fa-twitter-square" style="font-size:24px"></i></a>
+          <a href=""><i class="fab fa-instagram" style="font-size:24px"></i></a>
+          <a href=""><i class="fab fa-facebook" style="font-size:24px"></i></a>
+          <a href="https://www.youtube.com/"><i class="fa fa-youtube-play" style="font-size:24px;color:red"></i></a>
+        </div>
+        <h5>Phương thức thanh toán</h5>
+        <div class="socials-list">
+          <a href=""><i class="fa fa-cc-visa" style="font-size:24px; color: black;"></i></a>
+          <a href=""><i class="fa fa-cc-paypal" style="font-size:24px; color: black;"></i></a>
+        </div>
+      </div>
+      </div>
+    </div>
+    <div class="row1 textcenter">
+      <p>Designed by Team 23</p>
+    </div>
+  </footer>
+
+</body>
+</html>

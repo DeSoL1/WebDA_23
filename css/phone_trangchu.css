@@ -1,0 +1,457 @@
+@media (max-width: 574px) {
+
+
+    .image {
+        margin-top: 0px;
+        padding-bottom: 50px;
+        position: relative;
+        z-index: -1;
+    }
+
+    .image img {
+        width: 100%;
+        height: 250px;
+    }
+
+    .head {
+        width: 100%;
+        height: 100px;
+        margin: 0px;
+        text-align: center;
+        padding-bottom: 200px;
+        background-color: rgb(235, 234, 234);
+    }
+
+    .head h1 {
+        font-weight: bold;
+    }
+
+    .head ul {
+        list-style: none;
+    }
+
+    .head ul li {
+        display: inline-block;
+        padding-left: 25px;
+    }
+
+    .head ul li:hover {
+        color: rgb(0, 213, 209);
+    }
+
+    .textcontent {
+        text-align: center;
+    }
+
+    .textcontent p {
+        text-align: justify;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .row {
+        padding-bottom: 5px;
+        text-align: center;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+
+    .col-sm-3 {
+        width: 250px;
+        height: 150px;
+        padding-left: 120px;
+    }
+
+    .col-sm-3:hover {
+        outline: 0;
+        transform: scale(1.15);
+        transition: all ease 0.5s;
+        border-radius: 10px;
+    }
+
+    .col-sm-3 a {
+        color: black;
+        text-decoration: none;
+        font-weight: 30px;
+    }
+
+    .col-sm-3 a:hover {
+        color: tomato;
+    }
+
+    .img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .button {
+        text-align: center;
+        padding-top: 0px;
+    }
+
+    .btn1 {
+        width: 100px;
+        height: 40px;
+        background-color: rgb(84, 84, 84);
+        color: rgb(255, 255, 255);
+        text-align: center;
+        border-radius: 5px;
+        border: 0px;
+        margin-left: 20px;
+    }
+
+    .btn1:hover {
+        background-color: tomato;
+        color: #fcf9f9;
+    }
+
+    .lienket {
+        text-decoration: none;
+        color: black;
+    }
+
+    #img1 {
+        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 40px;
+    }
+
+    .img1 img {
+        padding-left: 0px;
+        width: 100%;
+        height: 200px;
+    }
+
+    #wrapper {
+        max-width: 100%;
+        margin: auto;
+    }
+
+    h4 {
+        font-size: 18px;
+        color: rgb(0, 0, 0);
+        padding: 10px 20px;
+        text-transform: uppercase;
+        border: 1px solid;
+        display: inline-block;
+        border-color: #858586;
+        font-weight: 600;
+
+    }
+
+    ul.sanpham {
+        padding-top: 40px;
+        padding-right: 40px;
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    ul.sanpham li {
+        flex-basis: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 20px;
+        box-sizing: border-box;
+    }
+
+    ul.sanpham li img {
+        max-width: 100%;
+        height: auto;
+    }
+
+
+    ul.sanpham li .sanpham-top a.mua-ngay {
+        text-transform: uppercase;
+        text-decoration: none;
+        text-align: center;
+        display: block;
+        background-color: rgb(0, 113, 212);
+        color: white;
+        padding: 10px 0px;
+        width: 100%;
+    }
+
+    ul.sanpham li .sanpham-top a.mua-ngay:hover {
+        background-color: tomato;
+    }
+
+    ul.sanpham li .sanpham-info {
+        padding: 10px 0px;
+    }
+
+    ul.sanpham li .sanpham-info a {
+        display: block;
+        text-decoration: none;
+    }
+
+    ul.sanpham li .sanpham-info a.sanpham-cat {
+        font-size: 11px;
+        text-transform: uppercase;
+        color: #858586;
+        padding: 5px 0px;
+    }
+
+    ul.sanpham li .sanpham-info a.sanpham-name {
+        color: rgb(3, 3, 122);
+        padding: 5px 0px;
+        font-weight: 700;
+        height: 60px;
+    }
+
+    ul.sanpham li .sanpham-info a.sanpham-name:hover {
+        color: rgb(176, 97, 1);
+    }
+
+    ul.sanpham li .sanpham-info .sanpham-gia {
+        color: tomato;
+        font-weight: 600;
+        padding-top: 10px;
+        text-align: left;
+        font-size: larger;
+        display: flex;
+
+    }
+
+    ul.sanpham li .sanpham-info .sanpham-gia p {
+        text-decoration: line-through;
+        color: black;
+        font-size: 15px;
+        padding-top: 5px;
+        padding-left: 10px;
+    }
+
+    ul.sanpham li .sanpham-info .sanpham-gia p i {
+        padding-left: 100px;
+        font-size: 18px;
+    }
+
+    ul.sanpham li .sanpham-info .sanpham-gia p i:hover {
+        color: tomato;
+    }
+
+
+}
+
+
+
+/* Ipad */
+@media (min-width: 574px) and (max-width: 990px) {
+
+    .image {
+        margin-top: 0px;
+        padding-bottom: 50px;
+        position: relative;
+        z-index: -1;
+    }
+
+    .image img {
+        width: 100%;
+        height: 350px;
+    }
+
+    .head {
+        width: 100%;
+        height: 100px;
+        margin: 0px;
+        text-align: center;
+        padding-bottom: 200px;
+        background-color: rgb(235, 234, 234);
+    }
+
+    .head h1 {
+        font-weight: bold;
+    }
+
+    .head ul {
+        list-style: none;
+    }
+
+    .head ul li {
+        display: inline-block;
+        padding-left: 25px;
+    }
+
+    .head ul li:hover {
+        color: rgb(0, 213, 209);
+    }
+
+    .textcontent {
+        text-align: center;
+    }
+
+    .textcontent p {
+        text-align: justify;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    ul.sanpham li{
+        flex-basis: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+        box-sizing: border-box;
+        }
+
+    .row {
+        padding-bottom: 5px;
+        text-align: center;
+        border-radius: 10px;
+        cursor: pointer;
+        display: flex;
+    }
+    .row ul{
+        margin-left: 0px;
+    }
+
+    .col-sm-3 {
+        width: 160px;
+        height: 150px;
+        padding-left: 10px;
+    }
+
+    .col-sm-3:hover {
+        outline: 0;
+        transform: scale(1.15);
+        transition: all ease 0.5s;
+        border-radius: 10px;
+    }
+
+    .col-sm-3 a {
+        color: black;
+        text-decoration: none;
+        font-weight: 30px;
+    }
+
+    .col-sm-3 a:hover {
+        color: tomato;
+    }
+
+    .img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .button {
+        text-align: center;
+        padding-top: 0px;
+    }
+
+    .btn1 {
+        width: 100px;
+        height: 40px;
+        background-color: rgb(84, 84, 84);
+        color: rgb(255, 255, 255);
+        text-align: center;
+        border-radius: 5px;
+        border: 0px;
+        margin-left: 20px;
+    }
+
+    .btn1:hover {
+        background-color: tomato;
+        color: #fcf9f9;
+    }
+
+    .lienket {
+        text-decoration: none;
+        color: black;
+    }
+
+    #img1 {
+        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 40px;
+    }
+
+    .img1 img {
+        padding-left: 0px;
+        width: 100%;
+        height: 200px;
+    }
+
+    #wrapper {
+        max-width: 100%;
+        margin: auto;
+    }
+
+    h4 {
+        font-size: 18px;
+        color: rgb(0, 0, 0);
+        padding: 10px 20px;
+        text-transform: uppercase;
+        border: 1px solid;
+        display: inline-block;
+        border-color: #858586;
+        font-weight: 600;
+
+    }
+
+    ul.sanpham {
+        padding-top: 40px;
+        padding-right: 40px;
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+    }
+
+    ul.sanpham li {
+        flex-basis: 50%;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 20px;
+        box-sizing: border-box;
+    }
+
+    ul.sanpham li img {
+        max-width: 100%;
+        height: auto;
+    }
+
+
+    ul.sanpham li .sanpham-top a.mua-ngay {
+        text-transform: uppercase;
+        text-decoration: none;
+        text-align: center;
+        display: block;
+        background-color: rgb(0, 113, 212);
+        color: white;
+        padding: 10px 0px;
+        width: 100%;
+    }
+
+    ul.sanpham li .sanpham-top a.mua-ngay:hover {
+        background-color: tomato;
+    }
+
+    ul.sanpham li .sanpham-info {
+        padding: 10px 0px;
+    }
+
+    ul.sanpham li .sanpham-info a {
+        display: block;
+        text-decoration: none;
+    }
+
+    ul.sanpham li .sanpham-info a.sanpham-cat {
+        font-size: 11px;
+        text-transform: uppercase;
+        color: #858586;
+        padding: 5px 0px;
+    }
+
+    ul.sanpham li .sanpham-info a.sanpham-name {
+        color: rgb(3, 3, 122);
+        padding: 5px 0px;
+        font-weight: 700;
+        height: 60px;
+    }
+
+  
+}

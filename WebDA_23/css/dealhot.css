@@ -1,0 +1,117 @@
+ul.sanpham1{
+    padding-top: 20px;
+    justify-content: space-between;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px, 2fr));
+
+}
+ul.sanpham1 li{
+    margin: 10px;
+    border: 1px solid #c8c8ca;
+ }
+ ul.sanpham1 li:hover {
+    box-shadow: 0 4px 5px rgba(133, 133, 133, 0.5);
+   
+ }
+ul.sanpham1 li{
+    display: grid;
+    padding-left: 0px;
+    padding-right: 0px;
+    box-sizing: border-box;
+}
+ul.sanpham1 li img{
+    max-width: 100%;
+    height: auto;
+}
+
+
+ul.sanpham1 li .sanpham-top a.mua-ngay{
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    background-color: rgb(0, 159, 212);
+    color: white;
+    padding: 10px 0px;
+    width: 100%;
+}
+ul.sanpham1 li .sanpham-top a.mua-ngay:hover{
+    background-color: tomato;
+}
+
+ul.sanpham1 li .sanpham-info{
+    padding: 10px 0px;
+}
+ul.sanpham1 li .sanpham-info a{
+    display: block;
+    text-decoration: none;
+    height: 20px;
+}
+ul.sanpham1 li .sanpham-info a.sanpham-cat{
+    font-size: 11px;
+    text-transform: uppercase;
+    color: #858586;
+    padding: 5px 0px;
+}
+ul.sanpham1 li .sanpham-info a.sanpham-name{
+    color: rgb(6, 6, 131);
+    padding: 5px 0px;
+    font-weight: 700;
+    height: 60px;
+}
+ul.sanpham1 li .sanpham-info .sanpham-gia{
+    color: tomato;
+    font-weight: 600;
+    padding-top: 10px;
+    text-align: center;
+    font-size: larger;
+    display: flex;
+    
+}
+ul.sanpham1 li .sanpham-info .sanpham-gia p{
+    text-decoration: line-through;
+    color: black;
+    font-size: 15px;
+    padding-top: 5px;
+    padding-left: 10px;
+}
+.sanpham-gia-cu{
+  padding-left: 80px;
+  text-decoration: line-through;
+
+}
+
+
+#content-top{
+    background-color: #f0efef;
+    height: 50px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.text-top{
+    display: flex;
+    padding: 10px 100px 100px;
+}
+.text-top a{
+    text-decoration: none; 
+    color: black;
+}
+.text-top a:hover{
+    color: tomato;
+}
+
+#textcontent-top{
+    background-image: url(../images/bannerSP.jpg);
+    height: 50px;
+    color: aliceblue;
+    margin-bottom: 10px;
+    margin-left: 100px;
+    margin-right: 100px;
+    text-align:center;
+    font-weight: 500;
+}
+#textcontent-top p{
+    padding-top: 5px;
+    font-size: 24px;
+}

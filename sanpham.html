@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomeDecor_Sanpham</title>
+    <!--CSS-->
+    <link rel="icon" href="https://congsv.vinhuni.edu.vn/sv/assets/images/eUniversity/logo_dhvinh.png"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/sanpham.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/phone_gioithieu.css">
+    <link rel="stylesheet" href="css/phone_menu.css">
+    
+    <!--link font awesome-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/fontawesome.min.css" integrity="sha384-z4tVnCr80ZcL0iufVdGQSUzNvJsKjEtqYZjiQrrYKlpGow+btDHDfQWkFjoaz/Zr" crossorigin="anonymous">
+    <!--Javascript-->
+    <script src="https://kit.fontawesome.com/c07a195907.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
+  
+</head>
+<body>
+  <!--Menu-->
+  
+<script>
+  $(document).ready(function() {
+      $('#toggle').click(function() {
+          $('nav').slideToggle();
+      });
+  })
+</script>
+
+<div id="wrapper">
+  <div id="header">
+      <div id="toggle">
+          <a href="index.html"><img class="logo1" src="images/Logo_chinhthuc01.png" alt=""></a>
+          <i class="fas fa-bars"></i>
+      </div>
+      <nav>
+          <a href="index.html"><img class="logo" src="images/Logo_chinhthuc01.png" alt=""></a>
+          <ul id="main-menu">
+              <li><a href="index.html" ><i class="fa-sharp fa-solid fa-house"></i></a></li>
+              <li><a  href="gioithieu.html">Giới Thiệu</a></li>
+              <li><a  href="sanpham.html"style="color: tomato;" >Sản Phẩm</a>
+              <li><a href="dealhot.html">Deal Hot</a></li>
+              <li><a href="lienhe.html" >Liên Hệ</a></li>
+              <li><a href="order.html">Giỏ Hàng Của Bạn</a></li>
+              <li class="search-add" >
+                  <form method="post">
+                    <div class="form-group">
+                        <input type="search" name="field-name" value="" placeholder="Tìm kiếm..." required="">
+                        <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+                        <button type="submit" class="search-btn"><span class="lni-search"></span></button>
+                    </div>
+                  </form>
+                </li>
+          </ul>
+      </nav>
+  </div>
+</div>
+  <!--Menu end-->
+  
+  <div id="textcontent-top">
+    <p>Tất cả sản phẩm</p>
+  </div>
+  <!--Lọc Sản phẩm-->
+    <div class="content">
+      <div class="ChonSanPham">
+          <div class="Danhmucsp">
+            <h5>DANH MỤC SẢN PHẨM</h5>
+                <ul class="xoacham">
+                    <li class="loaisp"><a href="">Nội thất</a></li>
+                    <li class="loaisp"><a href="">Đồ Trang trí</a></li>	
+                    <li class="loaisp"><a href="">Đèn</a></li>	
+                    <li class="loaisp"><a href="">Ngoại thất</a></li>	
+                    <li class="loaisp"><a href="">Chăn, Gối, Đệm & Nệm</a></li>   
+                </ul>
+          </div>
+          <div class="locsanpham">
+              <h5>LỌC SẢN PHẨM</h5>
+
+                <li>
+                  <button class="sub-btn">Giá sản phẩm<i style="font-size: 25px;" class="fa-plus dropdown"></i></button>
+                  <ul class="sub-menu">	
+                    <li class="sub-item"><input type="radio" name="" id=""> Giá ít hơn 100.000đ </li>	
+                    <li class="sub-item"><input type="radio" name="" id=""> 100.000đ - 200.000đ</li>	
+                    <li class="sub-item"><input type="radio" name="" id=""> 200.000đ - 300.000đ</li>	
+                    <li class="sub-item"><input type="radio" name="" id=""> 300.000đ - 500.000đ</li>
+                    <li class="sub-item"><input type="radio" name="" id=""> 500.000đ - 1.000.000đ</li>
+                    <li class="sub-item"><input type="radio" name="" id=""> Giá trên 1.000.000đ</li>
+                  </ul>
+                </li>
+
+                <li>
+                  <button class="sub-btn">Chất liệu<i style="font-size: 25px;" class="fa-plus dropdown"></i></button>
+                  <ul class="sub-menu">	
+                    <li class="sub-item"><input type="radio" name="" id=""> Cao su nhân tạo</li>	
+                    <li class="sub-item"><input type="radio" name="" id=""> Cao su thiên nhiên</li>	
+                    <li class="sub-item"><input type="radio" name="" id=""> Da công nghiệp</li>	
+                    <li class="sub-item"><input type="radio" name="" id=""> Da thật</li>
+                    <li class="sub-item"><input type="radio" name="" id=""> Vải bố Linen</li>
+                    <li class="sub-item"><input type="radio" name="" id=""> Vải Canvas</li>
+                    <li class="sub-item"><input type="radio" name="" id=""> Vải nhung</li>
+                  </ul>
+                </li>
+                <li>
+                  <button class="sub-btn">Loại sản phẩm<i style="font-size: 25px;" class="fa-plus dropdown"></i></button>
+                  <ul class="sub-menu">	
+                    <li class="sub-item"><input type="radio" name="" id=""> Cao su nhân tạo</li>	
+                    <li class="sub-item"><input type="radio" name="" id=""> Cao su thiên nhiên</li>	
+                    <li class="sub-item"><input type="radio" name="" id=""> Da công nghiệp</li>	
+                    <li class="sub-item"><input type="radio" name="" id=""> Da thật</li>
+                    <li class="sub-item"><input type="radio" name="" id=""> Vải bố Linen</li>
+                    <li class="sub-item"><input type="radio" name="" id=""> Vải Canvas</li>
+                    <li class="sub-item"><input type="radio" name="" id=""> Vải nhung</li>
+                  </ul>
+                </li>
+
+                <li>
+                  <button class="sub-btn">Phong cách<i style="font-size: 25px;" class="fa-plus dropdown"></i></button>
+                  <ul class="sub-menu">	
+                    <li class="sub-item"><input type="radio" name="" id=""> Phong cách Urban</li>	
+                    <li class="sub-item"><input type="radio" name="" id=""> Phong cách Art & Craft</li>	
+                    <li class="sub-item"><input type="radio" name="" id=""> Phong cách Brutalism</li>	
+                    <li class="sub-item"><input type="radio" name="" id=""> Phong cách cổ điển</li>
+                    <li class="sub-item"><input type="radio" name="" id=""> Phong cách Color Block</li>
+                    <li class="sub-item"><input type="radio" name="" id=""> Phong cách hiện đại</li>
+                    <li class="sub-item"><input type="radio" name="" id=""> Phong cách Industrial</li>
+                  </ul>
+                </li>
+                      
+              <script lang="javascript">
+                $(document).ready(function(){
+                $('.sub-btn').click(function(){
+                  $(this).next('.sub-menu').slideToggle();
+                  $(this).find('.dropdown').toggleClass('rotate');
+                });
+                });
+              </script>
+          </div>
+      </div>
+      <!-- Sản phẩm -->
+      <div class="main-sp" >
+          <h5> Chọn sản phẩm</h5>
+          <ul class="xep-ul">
+            <li class="xep-li">Xếp theo:</li>
+            <li class="xep-li"><input type="radio"> Từ A-Z</li>
+            <li class="xep-li"><input type="radio"> Từ Z-A</li>
+            <li class="xep-li"><input type="radio"> Hàng mới</li>
+            <li class="xep-li"><input type="radio"> Giá thấp đến cao</li>
+            <li class="xep-li"><input type="radio"> Giá cao đến thấp</li>
+          </ul>
+        
+        <ul class="sanpham">
+          <li>
+            <div class="sanpham-item">
+              <div class="sanpham-top">
+                <a href="" class="sanpham-main"><img src="images2/bobanghesofa.jpg" id="main" alt="Bàn ghế sofa"></a>
+              </div>
+              <div class="side_view" id="view">
+                <img src="images2/bobanghesofa.jpg"  onclick="changeImage(this)">
+                <img src="images2/banghesofa.png"  onclick="changeImage(this)">
+              </div>
+              <script type="text/javascript">
+                function changeImage(view) {
+                  var fullimg = document.getElementById("main");
+                  fullimg.src = view.src; 
+                }
+              </script>
+              <div class="sanpham-info">
+                <a href="" class="sanpham-cat"> Sofa</a>
+                <a href="" class="sanpham-name" style="font-size: 30px;"> Bộ 2 Bàn Sofa IGEA Việt Nam Phong Cách Scanvadian Màu Trắng</a>
+                <div class="sanpham-gia">599.000đ</div>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="sanpham-item">
+              <div class="sanpham-top">
+                <a href="" class="sanpham-main"><img src="images2/bobanghelamviec.jpg" id="main1" alt="Bàn ghế làm việc"></a>
+              </div>
+              <div class="side_view" id="view1">
+                <img src="images2/bobanghelamviec.jpg"  onclick="Changeimage(this)">
+                <img src="images2/banghelamviec.png"  onclick="Changeimage(this)">
+              </div>
+              <script type="text/javascript">
+                function Changeimage(view1) {
+                  var fullimg1 = document.getElementById("main1");
+                  fullimg1.src = view1.src; 
+                }
+              </script>
+              <div class="sanpham-info">
+                <a href="" class="sanpham-cat">Bàn làm việc </a>
+                <a href="" class="sanpham-name"> Bộ Bàn Ghế làm Việc đơn giản</a>
+                <div class="sanpham-gia">2.499.000đ</div>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="sanpham-item">
+              <div class="sanpham-top">
+                <a href="" class="sanpham-main"><img src="images2/bobanan.jpg" id="main2" alt=" "></a>
+              </div>
+              <div class="side_view" id="view2">
+                <img src="images2/bobanan2.png" onclick="changeimg(this)">
+                <img src="images2/bobanan.jpg" onclick="changeimg(this)">
+              </div>
+              <script type="text/javascript">
+                function changeimg(view2) {
+                  var fullimg = document.getElementById("main2");
+                  fullimg.src = view2.src; 
+                }
+              </script>
+              <div class="sanpham-info">
+                <a href="" class="sanpham-cat">Bàn ăn  </a>
+                <a href="" class="sanpham-name"> Bộ bàn ăn VINA- màu nâu</a>
+                <div class="sanpham-gia">100.000vnđ</div>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="sanpham-item">
+              <div class="sanpham-top">
+                <a href="" class="sanpham-main"><img src="images2/bantrandiem.png" id="main3" alt=""></a>
+              </div>
+              <div class="side_view" id="view3">
+                <img src="images2/bantrandiem.png" onclick="changeImg(this)">
+                <img src="images2/bantrangdiem2.png" onclick="changeImg(this)">
+              </div>
+              <script type="text/javascript">
+                function changeImg(view3) {
+                  var fullimg3 = document.getElementById("main3");
+                  fullimg3.src = view3.src; 
+                }
+              </script>
+              <div class="sanpham-info">
+                <a href="" class="sanpham-cat">Bàn trang điểm </a>
+                <a href="" class="sanpham-name"> Bộ 2 Bàn ăn Phong Cách Scanvadian Màu Trắng</a>
+                <div class="sanpham-gia">600.000vnđ</div>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="sanpham-item">
+              <div class="sanpham-top">
+                <a href="" class="sanpham-main"><img src="images2/giatreo.png" id="main4" alt=""></a>
+              </div>
+              <div class="side_view" id="view4">
+                <img src="images2/giatreo.png" onclick="ChangeImg(this)">
+                <img src="images2/giatreo2.png" onclick="ChangeImg(this)">
+                <img src="images2/giatreo3.png" onclick="ChangeImg(this)">
+              </div>
+              <script type="text/javascript">
+                function ChangeImg(view4) {
+                  var fullimg3 = document.getElementById("main4");
+                  fullimg3.src = view4.src; 
+                }
+              </script>
+              <div class="sanpham-info">
+                <a href="" class="sanpham-cat">Bàn trang điểm </a>
+                <a href="" class="sanpham-name"> Bộ 2 Bàn ăn Phong Cách Scanvadian Màu Trắng</a>
+                <div class="sanpham-gia">600.000vnđ</div>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="sanpham-item">
+              <div class="sanpham-top">
+                <a href="" class="sanpham-main"><img src="images2/dongho1.png" id="main5" alt=""></a>
+              </div>
+              <div class="side_view" id="view5">
+                <img src="images2/dongho1.png" onclick="changeIm(this)">
+                <img src="images2/dongho2.png" onclick="changeIm(this)">
+                <img src="images2/dongho3.png" onclick="changeIm(this)">
+              </div>
+              <script type="text/javascript">
+                function changeIm(view5) {
+                  var fullimg3 = document.getElementById("main5");
+                  fullimg3.src = view5.src; 
+                }
+              </script>
+              <div class="sanpham-info">
+                <a href="" class="sanpham-cat">Bàn ăn </a>
+                <a href="" class="sanpham-name"> Bộ 2 Bàn ăn Phong Cách Scanvadian Màu Trắng</a>
+                <div class="sanpham-gia">600.000vnđ</div>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="sanpham-item">
+              <div class="sanpham-top">
+                <a href="" class="sanpham-main"><img src="images2/tranhtrangtri.png" id="main6" alt=""></a>
+              </div>
+              <div class="side_view" id="view6">
+                <img src="images2/tranhtrangtri.png" onclick="changeImge(this)">
+                <img src="images2/tranhtrangtri2.png" onclick="changeImge(this)">
+              </div>
+              <script type="text/javascript">
+                function changeImge(view6) {
+                  var fullimg3 = document.getElementById("main6");
+                  fullimg3.src = view6.src; 
+                }
+              </script>
+              <div class="sanpham-info">
+                <a href="" class="sanpham-cat">Bàn ăn </a>
+                <a href="" class="sanpham-name"> Bộ 2 Bàn ăn Phong Cách Scanvadian Màu Trắng</a>
+                <div class="sanpham-gia">600.000vnđ</div>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="sanpham-item">
+              <div class="sanpham-top">
+                <a href="" class="sanpham-main"><img src="images2/thangtrangtri.png" id="main7" alt=""></a>
+              </div>
+              <div class="side_view" id="view7">
+                <img src="images2/thangtrangtri.png" onclick="ChangeImge(this)">
+                <img src="images2/thangtrangtri2.png" onclick="ChangeImge(this)">
+              </div>
+              <script type="text/javascript">
+                function ChangeImge(view7) {
+                  var fullimg3 = document.getElementById("main7");
+                  fullimg3.src = view7.src; 
+                }
+              </script>
+              <div class="sanpham-info">
+                <a href="" class="sanpham-cat">Bàn ăn </a>
+                <a href="" class="sanpham-name"> Bộ 2 Bàn ăn Phong Cách Scanvadian Màu Trắng</a>
+                <div class="sanpham-gia">600.000vnđ</div>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <ul class="sanpham">
+          
+        </ul>
+
+
+    
+        <ul class="sanpham">
+          <li>
+            <div class="sanpham-item">
+              <div class="sanpham-top">
+                <a href="" class="sanpham-main"><img src="images2/bobanghesofa.jpg" id="main" alt="Bàn ghế sofa"></a>
+              </div>
+              <div class="side_view" id="view">
+                <img src="images2/bobanghesofa.jpg"  onclick="changeImage(this)">
+                <img src="images2/banghesofa.png"  onclick="changeImage(this)">
+              </div>
+              <script type="text/javascript">
+                function changeImage(view) {
+                  var fullimg = document.getElementById("main");
+                  fullimg.src = view.src; 
+                }
+              </script>
+              <div class="sanpham-info">
+                <a href="" class="sanpham-cat"> Sofa</a>
+                <a href="" class="sanpham-name"> Bộ 2 Bàn Sofa IGEA Việt Nam Phong Cách Scanvadian Màu Trắng</a>
+                <div class="sanpham-gia">599.000đ</div>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="sanpham-item">
+              <div class="sanpham-top">
+                <a href="" class="sanpham-main"><img src="images2/bobanghelamviec.jpg" id="main1" alt="Bàn ghế làm việc"></a>
+              </div>
+              <div class="side_view" id="view1">
+                <img src="images2/bobanghelamviec.jpg"  onclick="Changeimage(this)">
+                <img src="images2/banghelamviec.png"  onclick="Changeimage(this)">
+              </div>
+              <script type="text/javascript">
+                function Changeimage(view1) {
+                  var fullimg1 = document.getElementById("main1");
+                  fullimg1.src = view1.src; 
+                }
+              </script>
+              <div class="sanpham-info">
+                <a href="" class="sanpham-cat">Bàn làm việc </a>
+                <a href="" class="sanpham-name"> Bộ Bàn Ghế làm Việc đơn giản</a>
+                <div class="sanpham-gia">2.499.000đ</div>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="sanpham-item">
+              <div class="sanpham-top">
+                <a href="" class="sanpham-main"><img src="images2/bobanan.jpg" id="main2" alt=" "></a>
+              </div>
+              <div class="side_view" id="view2">
+                <img src="images2/bobanan2.png" onclick="changeimg(this)">
+                <img src="images2/bobanan.jpg" onclick="changeimg(this)">
+              </div>
+              <script type="text/javascript">
+                function changeimg(view2) {
+                  var fullimg = document.getElementById("main2");
+                  fullimg.src = view2.src; 
+                }
+              </script>
+              <div class="sanpham-info">
+                <a href="" class="sanpham-cat">Bàn ăn  </a>
+                <a href="" class="sanpham-name"> Bộ bàn ăn VINA- màu nâu</a>
+                <div class="sanpham-gia">100.000vnđ</div>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="sanpham-item">
+              <div class="sanpham-top">
+                <a href="" class="sanpham-main"><img src="images2/bantrandiem.png" id="main3" alt=""></a>
+              </div>
+              <div class="side_view" id="view3">
+                <img src="images2/bantrandiem.png" onclick="changeImg(this)">
+                <img src="images2/bantrangdiem2.png" onclick="changeImg(this)">
+              </div>
+              <script type="text/javascript">
+                function changeImg(view3) {
+                  var fullimg3 = document.getElementById("main3");
+                  fullimg3.src = view3.src; 
+                }
+              </script>
+              <div class="sanpham-info">
+                <a href="" class="sanpham-cat">Bàn trang điểm </a>
+                <a href="" class="sanpham-name"> Bộ 2 Bàn ăn Phong Cách Scanvadian Màu Trắng</a>
+                <div class="sanpham-gia">600.000vnđ</div>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="sanpham-item">
+              <div class="sanpham-top">
+                <a href="" class="sanpham-main"><img src="images2/giatreo.png" id="main4" alt=""></a>
+              </div>
+              <div class="side_view" id="view4">
+                <img src="images2/giatreo.png" onclick="ChangeImg(this)">
+                <img src="images2/giatreo2.png" onclick="ChangeImg(this)">
+                <img src="images2/giatreo3.png" onclick="ChangeImg(this)">
+              </div>
+              <script type="text/javascript">
+                function ChangeImg(view4) {
+                  var fullimg3 = document.getElementById("main4");
+                  fullimg3.src = view4.src; 
+                }
+              </script>
+              <div class="sanpham-info">
+                <a href="" class="sanpham-cat">Bàn trang điểm </a>
+                <a href="" class="sanpham-name"> Bộ 2 Bàn ăn Phong Cách Scanvadian Màu Trắng</a>
+                <div class="sanpham-gia">600.000vnđ</div>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="sanpham-item">
+              <div class="sanpham-top">
+                <a href="" class="sanpham-main"><img src="images2/dongho1.png" id="main5" alt=""></a>
+              </div>
+              <div class="side_view" id="view5">
+                <img src="images2/dongho1.png" onclick="changeIm(this)">
+                <img src="images2/dongho2.png" onclick="changeIm(this)">
+                <img src="images2/dongho3.png" onclick="changeIm(this)">
+              </div>
+              <script type="text/javascript">
+                function changeIm(view5) {
+                  var fullimg3 = document.getElementById("main5");
+                  fullimg3.src = view5.src; 
+                }
+              </script>
+              <div class="sanpham-info">
+                <a href="" class="sanpham-cat">Bàn ăn </a>
+                <a href="" class="sanpham-name"> Bộ 2 Bàn ăn Phong Cách Scanvadian Màu Trắng</a>
+                <div class="sanpham-gia">600.000vnđ</div>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="sanpham-item">
+              <div class="sanpham-top">
+                <a href="" class="sanpham-main"><img src="images2/tranhtrangtri.png" id="main6" alt=""></a>
+              </div>
+              <div class="side_view" id="view6">
+                <img src="images2/tranhtrangtri.png" onclick="changeImge(this)">
+                <img src="images2/tranhtrangtri2.png" onclick="changeImge(this)">
+              </div>
+              <script type="text/javascript">
+                function changeImge(view6) {
+                  var fullimg3 = document.getElementById("main6");
+                  fullimg3.src = view6.src; 
+                }
+              </script>
+              <div class="sanpham-info">
+                <a href="" class="sanpham-cat">Bàn ăn </a>
+                <a href="" class="sanpham-name"> Bộ 2 Bàn ăn Phong Cách Scanvadian Màu Trắng</a>
+                <div class="sanpham-gia">600.000vnđ</div>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="sanpham-item">
+              <div class="sanpham-top">
+                <a href="" class="sanpham-main"><img src="images2/thangtrangtri.png" id="main7" alt=""></a>
+              </div>
+              <div class="side_view" id="view7">
+                <img src="images2/thangtrangtri.png" onclick="ChangeImge(this)">
+                <img src="images2/thangtrangtri2.png" onclick="ChangeImge(this)">
+              </div>
+              <script type="text/javascript">
+                function ChangeImge(view7) {
+                  var fullimg3 = document.getElementById("main7");
+                  fullimg3.src = view7.src; 
+                }
+              </script>
+              <div class="sanpham-info">
+                <a href="" class="sanpham-cat">Bàn ăn </a>
+                <a href="" class="sanpham-name"> Bộ 2 Bàn ăn Phong Cách Scanvadian Màu Trắng</a>
+                <div class="sanpham-gia">600.000vnđ</div>
+              </div>
+            </div>
+          </li>
+      </div>
+    </div>
+
+    <div id="backtop">
+      <i class="fa-solid fa-chevron-up"></i>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <script>
+      $(document).ready(function(){
+          $(window).scroll(function(){
+            if ($(this).scrollTop()){
+             $('#backtop').fadeIn();
+            }else {
+                $('#backtop').fadeOut();
+              }
+          });
+               $('#backtop').click(function(){
+              $('html, body').animate({
+                 scrollTop: 0
+              },  500);
+          });
+        });
+      </script>
+
+
+  <!--Phần footer-->
+  <footer>
+    <div class="row1">
+      <div class="boxcenter">
+      <div class="boxfooter1">
+        <h5>Liện hệ với chúng tôi</h5>
+        <ul class="ul boxcenter">
+          <li><strong>Địa chỉ: </strong> Bạch Liệu, Trường Thi, TP.Vinh</li>
+          <li><strong>Điện thoại:</strong>  <a href="#" style="text-decoration: none;">1900 3473</a></li>
+          <li><strong>Email:</strong>  dercorhome@gmail.com</li>
+          <li><a href="#"><img class="logo" src="images/Logo_chinhthuc01.png" alt=""></a></li>
+        </ul>
+      </div>
+      <div class="boxfooter2">
+        <h5>Về chúng tôi</h5>
+        <ul class="ul boxfooter">
+          <li><a href="gioithieu.html">Giới thiệu</a></li>
+          <li><a href=""> Bảo mật thông tin cá nhân</a></li>
+          <li><a href="">Bán hàng cùng DecorHome</a></li>
+        </ul>
+      </div>
+      <div class="boxfooter3">
+        <h5>Hỗ trợ khách hàng</h5>
+        <ul class="ul boxfooter">
+          <li><a href="">Hướng dẫn đặt hàng</a> </li>
+          <li><a href="">Quy trình giao hàng & thanh toán</a> </li>
+          <li><a href="">Chính sách giải quyết khiếu nại</a> </li>
+        </ul>
+      </div>
+      <div class="boxfooter4">
+        <h5>Kết nối với chúng tôi</h5>
+        <div class="socials-list">
+          <a href=""><i class="fa fa-twitter-square" style="font-size:24px"></i></a>
+          <a href=""><i class="fab fa-instagram" style="font-size:24px"></i></a>
+          <a href=""><i class="fab fa-facebook" style="font-size:24px"></i></a>
+          <a href="https://www.youtube.com/"><i class="fa fa-youtube-play" style="font-size:24px;color:red"></i></a>
+        </div>
+        <h5>Phương thức thanh toán</h5>
+        <div class="socials-list">
+          <a href=""><i class="fa fa-cc-visa" style="font-size:24px; color: black;"></i></a>
+          <a href=""><i class="fa fa-cc-paypal" style="font-size:24px; color: black;"></i></a>
+        </div>
+      </div>
+      </div>
+    </div>
+    <div class="row1 textcenter">
+      <p>Designed by Team 23</p>
+    </div>
+  </footer>
+    
+</body>
+</html>

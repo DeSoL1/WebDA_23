@@ -1,0 +1,281 @@
+
+
+
+ * {
+    box-sizing: border-box;
+ }
+ 
+.navbar {
+    position:fixed;
+    width: 100%;
+    z-index: 999;
+    text-align: center;
+    background: rgb(255, 253, 253);
+    height: 100px;
+}
+ 
+.navbar-left {
+    display: inline-block;
+    margin-left: 15px;
+    justify-content: center;
+}
+
+/* Menu da cap*/
+#main-menu{
+   display: flex;
+   list-style: none;
+   margin: 0;
+   padding: 0;
+}
+#main-menu li a{
+   display: block;
+   text-decoration: none;
+}
+#main-menu ul.menu-c2{
+   width: 200px;
+   position: absolute;
+   background-color: rgb(225, 225, 225);
+   list-style: none;
+   padding: 10px 0px;
+   display: none;
+   text-align: left;
+   font-weight: 500;
+
+}
+.menu-c1{
+   font-weight: 600;
+}
+#main-menu ul.menu-c2 a i{
+   font-size:18px;
+    float: right;
+    padding-right: 10px;
+
+}
+#main-menu li:hover ul.menu-c2 {
+   display: block;
+}
+#main-menu ul.menu-c2 a{
+   width: 200px;
+   color: black;
+   border-bottom: 1px solid rgb(255, 255, 255);
+   padding: 5px 0px;
+   padding-left: 20px;
+}
+#main-menu ul.menu-c2  li:hover>a{
+   color: #ec4821;
+}
+#main-menu ul.menu-c2 li:last-child a{
+   border: none;
+}
+#main-menu ul.menu-c2 ul.menu-c2{
+   left: 200px;
+   margin-top: -35px;
+   display: none;
+}
+#main-menu ul.menu-c2 li:hover ul.menu-c2 {
+   padding: 0px 0px;
+   display: block;
+}
+
+/*thiet lap boder*/
+
+
+
+
+
+
+/* tìm kiếm */
+.search-add {
+   text-align: center;
+}
+
+.search-add .form-group {
+  position: relative;
+}
+
+.search-add input {
+  border: 2px solid tomato;
+  padding: 7px 40px 7px 15px;
+  border-radius: 10px;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.search-add input:focus {
+  box-shadow: none;
+  outline: none;
+  border-color: #0dcdbd;
+}
+
+.search-add .search-btn {
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  color: #272727;
+  border: none;
+  cursor: pointer;
+  background: transparent;
+  font-size: 18px;
+}
+.search-add .form-group a i {
+  position: absolute;
+  top: 12px; 
+  right: 10px;
+  transition: all 0.5s ease-in-out;
+  width: 20px;
+  height: auto;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+.navbar-right {
+    display: inline-block;
+    margin-right: 15px;
+    position: absolute;
+    top: 0;
+    right: 0;
+
+}
+ 
+ .navbar-brand,
+ .navbar .nav-link {
+    color: black;
+    text-decoration: none;
+    display: inline-block;
+    padding: 15px;
+    font-size: large;
+    text-align: center;
+}
+ 
+.navbar-brand {
+    font-weight: bold;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+ 
+.navbar .nav-link:hover {
+    color: #ec4821;
+}
+
+.navbar-collapse,
+.navbar-toggler {
+    display: none;
+}
+ 
+
+ 
+ @media (max-width: 842px) {
+    .navbar-right,
+    .navbar-left {
+       display: block;
+       border-top: 1px solid DimGray;
+    }
+ 
+    .navbar-right {
+       position: static;
+    }
+ 
+    .navbar .nav-link {
+       display: block;
+    }
+ 
+    .navbar-collapse:checked + .navbar {
+       max-height: 50px;
+       overflow: hidden;
+    }
+ 
+    .navbar-toggler {
+       color: black;
+ 
+       display: inline-block;
+       padding: 15px 25px;
+ 
+       position: absolute;
+       top: 0;
+       right: 0;
+ 
+       border-left: 1px solid DimGray;
+ 
+       cursor: pointer;
+    }
+ } /* @media */
+ 
+ .down1 {
+    position: relative;
+    width: 250px;
+    display: inline-block;
+    margin-right: 200px;  
+ }
+
+ .search {
+    position: relative;
+    width: 100%;
+    padding: 10px 10px 10px 20px; /*left top bot right*/
+    border: 0;
+    border-radius: 50px;
+    overflow: hidden;
+    font-family: "Poppins";
+    font-size: 16px;
+    transition: all 0.5s ease-in-out;
+}
+
+.search:focus-visible {
+    outline: 0;
+    box-shadow: 0 0 5px 5px rgb(116, 116, 116);
+}
+
+* {box-sizing:border-box}
+body {font-family: Verdana,sans-serif;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}

@@ -1,0 +1,168 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+nav {
+    width: 100%;
+    background-color: #ffffff;
+    height: 110px;
+}
+
+#main-menu {
+    display: flex;
+    float: right;
+    margin-right: 100px;
+    margin-top: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+nav #main-menu li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    display: block;
+    padding: 8px 15px;
+}
+
+nav #main-menu li:hover a {
+    background: white;
+    color: tomato;
+    transition: all 0.3s;
+}
+
+#toggle {
+    display: none;
+    background: #656565;
+    color: rgb(255, 255, 255);
+    text-align: right;
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.logo{
+cursor: pointer;
+width: 100px;
+height: auto;
+padding-left: 10px;
+}
+.search-add {
+    text-align: center;
+}
+
+.search-add .form-group {
+position: relative;
+}
+
+.search-add input {
+
+border: 2px solid tomato;
+padding: 7px 40px 7px 15px;
+border-radius: 10px;
+-webkit-transition: all 0.3s linear;
+-moz-transition: all 0.3s linear;
+-o-transition: all 0.3s linear;
+transition: all 0.3s linear;
+}
+
+.search-add input:focus {
+box-shadow: none;
+outline: none;
+border-color: #0dcdbd;
+}
+
+.search-add .search-btn {
+position: absolute;
+top: 8px;
+right: 10px;
+color: #272727;
+border: none;
+cursor: pointer;
+background: transparent;
+font-size: 18px;
+}
+.search-add .form-group a i {
+position: absolute;
+top: 12px; 
+right: 10px;
+transition: all 0.5s ease-in-out;
+width: 20px;
+height: auto;
+cursor: pointer;
+}
+
+@media  (max-width: 574px) {
+    #main-menu {
+        flex-direction: column;
+        text-align: center;
+        float: none;
+        margin-right: 0px;
+        margin-top: 0px;
+        margin-bottom: 100px;
+    }
+    nav #main-menu li a {
+    background-color: #e4e4e4;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    display: block;
+    padding: 8px 15px;
+    }
+    nav #main-menu li:hover a {
+        background-color: #e4e4e4;
+        color: rgb(250, 0, 0);
+        transition: all 0.3s;
+    }
+    #toggle {
+        height: 60px;
+        display: block;
+
+    }
+    .logo1{
+    float: left;
+    cursor: pointer;
+    width: 40px;
+    height: auto;
+    }
+    
+    .search-add .form-group {
+        position: relative;
+        background-color: #e4e4e4;
+    }
+    .search-add .form-group a i {
+        position: absolute;
+        text-align: center;
+        right: 25%;
+        transition: all 0.5s ease-in-out;
+        width: 20px;
+        height: auto;
+        cursor: pointer;
+        }
+
+    nav {
+        display: none;
+    }
+    .logo{
+        display: none;
+    }
+}
+@media (min-width: 574px) and (max-width: 990px){
+    nav {
+    background-color: #ffffff;
+    height: 120px;
+}
+.logo1{
+    float: left;
+    cursor: pointer;
+    width: 30px;
+    height: auto;
+    }
+    
+.search-add input{
+    width: 10px;
+    padding-right: 120px;
+}
+
+}
